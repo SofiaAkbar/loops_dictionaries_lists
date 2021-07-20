@@ -92,12 +92,47 @@ print(evens)
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 
+erik_numbers = users["Erik"]["lottery_numbers"]
+users["Erik"]["lottery_numbers"].append(7)
 
-
-
-
-
+print(erik_numbers)
 
 # 8. Change Erik's hometown to Edinburgh
+
+users["Erik"]["home_town"]= "Edinburgh"
+print(users["Erik"]["home_town"])
+
 # 9. Add a pet dog to Erik called "Fluffy"
+
+users["Erik"]["pets"].append(
+  {
+    "name": "fluffy",
+    "species": "dog"
+  }
+)
+
+# print(users["Erik"]["pets"])
+
 # 10. Add another person to the users dictionary
+
+users["Bob"] = {
+  "twitter": "bobbyb",
+  "lottery_numbers": [1, 65, 4, 43, 9, 60],
+  "home_town": "Glasgow",
+  "pets": [
+    {
+      "name": "tortilla",
+      "species": "seagull"
+    },
+    {
+      "name": "juti",
+      "species": "dog"
+    },
+    {
+      "name": "chooa",
+      "species": "mouse"
+    }
+  ]
+}
+
+print(users)
